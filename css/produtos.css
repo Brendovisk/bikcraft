@@ -1,0 +1,129 @@
+.page-banner--produtos {
+    background: url('../img/bg-produtos.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.mosaic__block {
+    display: grid;
+    grid-template-columns: 1fr .3fr .7fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 6rem;
+}
+
+.mosaic__block:last-child {
+    margin-bottom: 0;
+}
+
+.mosaic__banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+    position: relative;
+}
+
+.mosaic__banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
+}
+
+.mosaic__banner .subtitle {
+    font-size: var(--fs--title);
+    color: var(--third);
+    z-index: 1;
+    margin: 0;
+}
+
+.mosaic__banner .subtitle::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: var(--third);
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.mosaic__banner .subtitle::after {
+    background: var(--third);
+}
+
+.mosaic__icon {
+    background: var(--secondary);
+    height: 100%;
+    padding: clamp(1rem, 3vw, 6rem);
+    object-fit: contain;
+}
+
+.mosaic__img {
+    grid-column: 1 / 2;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mosaic__information {
+    grid-column: 2 / 4;
+    background: var(--secondary);
+    color: var(--third);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mosaic__text {
+    padding: 3rem;
+    font-size: var(--fs--body-title);
+    font-weight: 400;
+}
+
+.mosaic__list {
+    color: var(--secondary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.mosaic__list li {
+    flex: 1 1 calc(50% - 2px);
+    background: var(--primary);
+    text-align: center;
+    font-size: var(--fs--body-title);
+    font-weight: 700;
+    font-family: var(--ff--title);
+    padding-block: 1rem;
+}
+
+.mosaic__banner--passeio {
+    background: url('../img/produtos/bikcraft-passeio-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.mosaic__banner--esporte {
+    background: url('../img/produtos/bikcraft-esporte-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.mosaic__banner--retro {
+    background: url('../img/produtos/bikcraft-retro-1.jpg') no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .mosaic__block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mosaic__banner {
+        grid-column: 1;
+    }
+
+    .mosaic__img,
+    .mosaic__information {
+        grid-column: 1 / 3;
+    }
+}

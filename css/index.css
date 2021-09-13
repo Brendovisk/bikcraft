@@ -1,0 +1,140 @@
+/* First section */
+.banner {
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-block: 1.5rem;
+}
+
+.banner__title {
+  font-size: var(--fs--title);
+  font-family: var(--ff--title);
+  text-transform: uppercase;
+  color: var(--third);
+  text-align: center;
+}
+
+.banner__quote {
+  text-align: center;
+  color: var(--third);
+  font-weight: 700;
+}
+
+.banner__quote .quote {
+  max-width: 35ch;
+}
+
+/* Products section */
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-block: 1.5rem;
+}
+
+.products__item {
+  background: var(--secondary);
+  flex: 1;
+}
+
+.products__item figcaption {
+  background: var(--primary);
+  padding: 3rem 5rem;
+  text-align: center;
+}
+
+.products__item img {
+  width: 100%;
+  padding: 4rem;
+}
+
+/* Portfólio section */
+.gallery {
+  background: var(--secondary);
+  color: var(--third);
+}
+
+.gallery .subtitle {
+  color: var(--primary);
+}
+
+.gallery .subtitle::after {
+  background: var(--primary);
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.gallery__item {
+  flex: 1 1 560px;
+  width: 100%;
+  object-fit: cover;
+  min-height: 28rem;
+}
+
+/* Quality section */
+.quality {
+  position: relative;
+}
+
+.quality__img {
+  margin-inline: auto;
+}
+
+.quality__img__line {
+  margin-top: -55px;
+  margin-inline: auto;
+  transform: translateX(1px);
+}
+
+.quality__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 5rem;
+  text-align: center;
+  max-width: 1068px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  gap: 3rem;
+}
+
+.quality__item {
+  flex: 1 1 326px;
+  min-width: 31ch;
+}
+
+.quality .call-to-action {
+  margin-top: 6rem;
+}
+
+/* Banner footer */
+.banner__footer {
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .quality__img__line {
+    display: none;
+  }
+  .footer__list {
+    grid-template-columns: 1fr;
+  }
+}

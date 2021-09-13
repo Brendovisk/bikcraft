@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bikcraft: um site para fins de Estudo, criado por JustDon"
+    />
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+
+    <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon" />
+    <title>Bikcraft</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="/index.html"
+          ><img src="img/bikcraft.svg" alt="Bikcraft logo"
+        /></a>
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+          <ul class="menu">
+            <li><a href="/sobre.html" class="menu__item">Sobre</a></li>
+            <li><a href="/produtos.html" class="menu__item">Produtos</a></li>
+            <li><a href="/portfolio.html" class="menu__item">Portfólio</a></li>
+            <li><a href="/contato.html" class="menu__item">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h1 class="banner__title">bicicletas feitas a mão</h1>
+        <blockquote class="banner__quote">
+          <p class="quote">
+            “Não tenha nada em sua casa que você não considere útil ou acredita
+            ser bonito”
+          </p>
+          <cite>WILLIAM MORRIS</cite>
+        </blockquote>
+        <a class="btn" href="contato.html">orçamento</a>
+      </section>
+
+      <section class="products container spacer">
+        <h2 class="subtitle">produtos</h2>
+        <div class="products__list">
+          <figure class="products__item">
+            <img
+              src="img/produtos/passeio.svg"
+              alt="Imagem de bicicleta para passeio"
+            />
+            <figcaption>
+              <h3 class="subtitle">passeio</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+          <figure class="products__item">
+            <img
+              src="img/produtos/esporte.svg"
+              alt="Imagem de bicicleta para esporte"
+            />
+            <figcaption>
+              <h3 class="subtitle">esporte</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+          <figure class="products__item">
+            <img src="img/produtos/retro.svg" alt="Imagem de bicicleta retrô" />
+            <figcaption>
+              <h3 class="subtitle">retrô</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="call-to-action">
+          <p>Clique aqui e veja os detalhes dos produtos</p>
+          <a class="btn btn--dark" href="contato.html">orçamento</a>
+        </div>
+      </section>
+
+      <section class="gallery spacer">
+        <h2 class="subtitle">portfólio</h2>
+        <div class="gallery__list container">
+          <img
+            class="gallery__item"
+            src="img/portfolio/retro.jpg"
+            alt="Foto de uma bicileta retrô com um cesto parada sobre um apoio"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/passeio.jpg"
+            alt="Foto de uma bicicleta de passeio parada na rua"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/esporte.jpg"
+            alt="Foto de uma bicicleta de esporte parada ao lado de uma casa de madeira"
+          />
+        </div>
+        <div class="call-to-action">
+          <p>Conheça mais o nosso portfólio</p>
+          <button class="btn">orçamento</button>
+        </div>
+      </section>
+
+      <section class="quality container spacer">
+        <h2 class="subtitle">qualidade</h2>
+        <img
+          class="quality__img"
+          src="img/bikcraft-qualidade.svg"
+          alt="Logo da Bikcraft"
+        />
+        <img
+          class="quality__img__line"
+          src="img/linhas.svg"
+          alt="Linhas decorativas"
+        />
+        <ul class="quality__list">
+          <li class="quality__item">
+            <h3 class="subtitle">durabilidade</h3>
+            <p>
+              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
+            </p>
+          </li>
+          <li class="quality__item">
+            <h3 class="subtitle">design</h3>
+            <p>
+              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
+            </p>
+          </li>
+          <li class="quality__item">
+            <h3 class="subtitle">sustentabilidade</h3>
+            <p>
+              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
+            </p>
+          </li>
+        </ul>
+        <div class="call-to-action">
+          <p>Conheça mais a história da Bikcraft</p>
+          <a class="btn btn--dark" href="sobre.html">sobre</a>
+        </div>
+      </section>
+
+      <section class="banner__footer">
+        <blockquote class="banner__quote">
+          <p class="quote">
+            “Não tenha nada em sua casa que você não considere útil ou acredita
+            ser bonito”
+          </p>
+          <cite>WILLIAM MORRIS</cite>
+        </blockquote>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer__list container">
+        <div class="footer__item footer__history">
+          <h3 class="subtitle">nossa história</h3>
+          <p>
+            O verdadeiro segredo da felicidade está em ter um genuíno interesse
+            por todos os detalhes da vida cotidiana O verdadeiro segredo
+          </p>
+        </div>
+        <div class="footer__item footer__contact">
+          <h3 class="subtitle">contato</h3>
+          <address>
+            <ul>
+              <li><a href="tel:5511999999999">- 11 99999-9999</a></li>
+              <li>
+                <a href="mailto:contato@bikcraft.com">- contato@bikcraft.com</a>
+              </li>
+              <li>- Bragança Paulista, SP</li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__item footer__social-media">
+          <h3 class="subtitle">redes sociais</h3>
+          <address>
+            <ul class="social-media">
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/facebook.svg"
+                    alt="Link com o ícone do Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Link com o ícone do Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Link com o ícone do Twitter"
+                /></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="footer__license">
+        <small>Bikcraft 2021 - Todos os direitos reservados</small>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.page-banner--sobre {
+    background: url('../img/bg-sobre.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.about {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline: 1.5rem;
+    padding-bottom: 0;
+    max-width: 117rem;
+}
+
+.about::after {
+    content: "";
+    display: block;
+    background: url('../img/equipe-bikcraft.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 32rem;
+    width: 100%;
+}
+
+.about__block {
+    flex: 1 1 340px;
+}
+
+.about__block--mission {
+    flex-basis: 560px;
+}
+
+.about__block .subtitle,
+.about__block .subtitle::after {
+    text-align: left;
+    margin-inline: 0;
+}
+
+.about__block .subtitle {
+    margin-bottom: 20px;
+}

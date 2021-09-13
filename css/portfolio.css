@@ -1,0 +1,21 @@
+.page-banner--portfolio {
+    background: url('../img/bg-portfolio.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.portfolio {
+    padding: clamp(4rem, 6vw, 8rem);
+    text-align: center;
+    font-family: var(--ff--title);
+    max-width: 60ch;
+    margin-inline: auto;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.portfolio cite {
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 2rem;
+    display: block;
+}

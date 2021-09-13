@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bikcraft: um site para fins de Estudo, criado por JustDon"
+    />
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/produtos.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+
+    <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon" />
+    <title>Bikcraft</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="/index.html"
+          ><img src="img/bikcraft.svg" alt="Bikcraft logo"
+        /></a>
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+          <ul class="menu">
+            <li><a href="/sobre.html" class="menu__item">Sobre</a></li>
+            <li><a href="/produtos.html" class="menu__item">Produtos</a></li>
+            <li><a href="/portfolio.html" class="menu__item">Portfólio</a></li>
+            <li><a href="/contato.html" class="menu__item">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner page-banner--contato">
+        <h1 class="subtitle">contato</h1>
+        <h2 class="page-banner__about">Conheça todos os nossos produtos</h2>
+      </section>
+
+      <section class="contact__block container spacer">
+        <form id="form" action="" method="post">
+          <div class="form__field">
+            <label for="name">Nome</label>
+            <input class="form__input" type="text" name="name" required/>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input class="form__input" type="text" name="email" required/>
+          </div>
+          <div class="form__field">
+            <label for="phone">Telefone</label>
+            <input class="form__input" type="text" name="phone" required/>
+          </div>
+          <div class="form__field">
+            <label for="message">Mensagem</label>
+            <textarea class="form__input form__textarea" name="message"></textarea>
+          </div>
+          <button class="btn btn--dark" type="submit">enviar</button>
+        </form>
+        <div class="form__details">
+          <h3 class="form__subtitle">Dados</h3>
+          <address class="form__contact">
+            <a class="form__contact__item" href="tel:5511999999999">+55 11 99999-9999</a>
+            <a class="form__contact__item" href="mailto:">orcamento@bikcraft.com</a>
+            <p>Rua Goiás, 999</p>
+            <p>Bragança Paulista - SP</p>
+          </address>
+          <h3 class="form__subtitle">redes sociais</h3>
+          <address>
+            <ul class="social-media">
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/facebook.svg"
+                    alt="Link com o ícone do Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Link com o ícone do Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Link com o ícone do Twitter"
+                /></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="footer__list container">
+        <div class="footer__item footer__history">
+          <h3 class="subtitle">nossa história</h3>
+          <p>
+            O verdadeiro segredo da felicidade está em ter um genuíno interesse
+            por todos os detalhes da vida cotidiana O verdadeiro segredo
+          </p>
+        </div>
+        <div class="footer__item footer__contact">
+          <h3 class="subtitle">contato</h3>
+          <address>
+            <ul>
+              <li><a href="tel:5511999999999">- 11 99999-9999</a></li>
+              <li>
+                <a href="mailto:contato@bikcraft.com">- contato@bikcraft.com</a>
+              </li>
+              <li>- Bragança Paulista, SP</li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__item footer__social-media">
+          <h3 class="subtitle">redes sociais</h3>
+          <address>
+            <ul class="social-media">
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/facebook.svg"
+                    alt="Link com o ícone do Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Link com o ícone do Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon"
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Link com o ícone do Twitter"
+                /></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="footer__license">
+        <small>Bikcraft 2021 - Todos os direitos reservados</small>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
