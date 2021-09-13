@@ -40,7 +40,7 @@
 
 .products__item {
   background: var(--secondary);
-  flex: 1;
+  flex: 1 1 366px;
 }
 
 .products__item figcaption {
