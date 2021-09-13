@@ -41,79 +41,60 @@
             <span id="hamburger"></span>
           </button>
           <ul class="menu">
-            <li><a href="/sobre.html" class="menu__item">Sobre</a></li>
-            <li><a href="/produtos.html" class="menu__item">Produtos</a></li>
-            <li><a href="/portfolio.html" class="menu__item">Portfólio</a></li>
-            <li><a href="/contato.html" class="menu__item">Contato</a></li>
+            <li><a href="./sobre.html" class="menu__item">Sobre</a></li>
+            <li><a href="./produtos.html" class="menu__item">Produtos</a></li>
+            <li><a href="./portfolio.html" class="menu__item">Portfólio</a></li>
+            <li><a href="./contato.html" class="menu__item">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="page-banner page-banner--contato">
-        <h1 class="subtitle">contato</h1>
+      <section class="page-banner page-banner--portfolio">
+        <h1 class="subtitle">portfólio</h1>
         <h2 class="page-banner__about">Conheça todos os nossos produtos</h2>
       </section>
 
-      <section class="contact__block container spacer">
-        <form id="form" action="" method="post">
-          <div class="form__field">
-            <label for="name">Nome</label>
-            <input class="form__input" type="text" name="name" required/>
-          </div>
-          <div class="form__field">
-            <label for="email">Email</label>
-            <input class="form__input" type="text" name="email" required/>
-          </div>
-          <div class="form__field">
-            <label for="phone">Telefone</label>
-            <input class="form__input" type="text" name="phone" required/>
-          </div>
-          <div class="form__field">
-            <label for="message">Mensagem</label>
-            <textarea class="form__input form__textarea" name="message"></textarea>
-          </div>
-          <button class="btn btn--dark" type="submit">enviar</button>
-        </form>
-        <div class="form__details">
-          <h3 class="form__subtitle">Dados</h3>
-          <address class="form__contact">
-            <a class="form__contact__item" href="tel:5511999999999">+55 11 99999-9999</a>
-            <a class="form__contact__item" href="mailto:">orcamento@bikcraft.com</a>
-            <p>Rua Goiás, 999</p>
-            <p>Bragança Paulista - SP</p>
-          </address>
-          <h3 class="form__subtitle">redes sociais</h3>
-          <address>
-            <ul class="social-media">
-              <li>
-                <a href=""
-                  ><img
-                    class="social-media__icon social-media__icon--dark"
-                    src="img/redes-sociais/facebook.svg"
-                    alt="Link com o ícone do Facebook"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="social-media__icon social-media__icon--dark"
-                    src="img/redes-sociais/instagram.svg"
-                    alt="Link com o ícone do Instagram"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img
-                    class="social-media__icon social-media__icon--dark"
-                    src="img/redes-sociais/twitter.svg"
-                    alt="Link com o ícone do Twitter"
-                /></a>
-              </li>
-            </ul>
-          </address>
+      <section>
+        <blockquote class="portfolio">
+          <p class="potfolio__quote">
+            “No mundo atual, a contínua expansão de nossa atividade cumpre um
+            papel essencial na formulação da gestão inovadora da qual fazemos
+            parte”
+          </p>
+          <cite>Barbara Moss</cite>
+        </blockquote>
+      </section>
+
+      <section class="gallery spacer">
+        <div class="gallery__list container">
+          <img
+            class="gallery__item"
+            src="img/portfolio/retro.jpg"
+            alt="Foto de uma bicileta retrô com um cesto parada sobre um apoio"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/passeio.jpg"
+            alt="Foto de uma bicicleta de passeio parada na rua"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/esporte.jpg"
+            alt="Foto de uma bicicleta de esporte parada ao lado de uma casa de madeira"
+          />
         </div>
+      </section>
+
+      <section class="banner__footer">
+        <blockquote class="banner__quote">
+          <p class="quote">
+            “Não tenha nada em sua casa que você não considere útil ou acredita
+            ser bonito”
+          </p>
+          <cite>WILLIAM MORRIS</cite>
+        </blockquote>
       </section>
     </main>
 

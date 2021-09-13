@@ -41,76 +41,86 @@
             <span id="hamburger"></span>
           </button>
           <ul class="menu">
-            <li><a href="/sobre.html" class="menu__item">Sobre</a></li>
-            <li><a href="/produtos.html" class="menu__item">Produtos</a></li>
-            <li><a href="/portfolio.html" class="menu__item">Portfólio</a></li>
-            <li><a href="/contato.html" class="menu__item">Contato</a></li>
+            <li><a href="./sobre.html" class="menu__item">Sobre</a></li>
+            <li><a href="./produtos.html" class="menu__item">Produtos</a></li>
+            <li><a href="./portfolio.html" class="menu__item">Portfólio</a></li>
+            <li><a href="./contato.html" class="menu__item">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="page-banner page-banner--sobre">
-        <h1 class="subtitle">sobre</h1>
-        <h2 class="page-banner__about">Conheça mais sobre a bikcraft</h2>
+      <section class="page-banner page-banner--contato">
+        <h1 class="subtitle">contato</h1>
+        <h2 class="page-banner__about">Conheça todos os nossos produtos</h2>
       </section>
 
-      <section class="about container spacer">
-        <div class="about__block about__block--mission">
-          <h2 class="subtitle">História, Missão e Visão</h2>
-          <p>
-            Molestiae aut minima dolorem enim. Facere laborum tenetur et sequi
-            sed. Omnis delectus rerum laudantium perspiciatis rerum rem.
-          </p>
-          <p>
-            Explicabo rerum assumenda in. Ex eum voluptatum repudiandae. Et
-            rerum et facere voluptatum quos labore.
-          </p>
+      <section class="contact__block container spacer">
+        <form id="form" action="" method="post">
+          <div class="form__field">
+            <label for="name">Nome</label>
+            <input class="form__input" type="text" name="name" required />
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input class="form__input" type="text" name="email" required />
+          </div>
+          <div class="form__field">
+            <label for="phone">Telefone</label>
+            <input class="form__input" type="text" name="phone" required />
+          </div>
+          <div class="form__field">
+            <label for="message">Mensagem</label>
+            <textarea
+              class="form__input form__textarea"
+              name="message"
+            ></textarea>
+          </div>
+          <button class="btn btn--dark" type="submit">enviar</button>
+        </form>
+        <div class="form__details">
+          <h3 class="form__subtitle">Dados</h3>
+          <address class="form__contact">
+            <a class="form__contact__item" href="tel:5511999999999"
+              >+55 11 99999-9999</a
+            >
+            <a class="form__contact__item" href="mailto:"
+              >orcamento@bikcraft.com</a
+            >
+            <p>Rua Goiás, 999</p>
+            <p>Bragança Paulista - SP</p>
+          </address>
+          <h3 class="form__subtitle">redes sociais</h3>
+          <address>
+            <ul class="social-media">
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/facebook.svg"
+                    alt="Link com o ícone do Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Link com o ícone do Instagram"
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img
+                    class="social-media__icon social-media__icon--dark"
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Link com o ícone do Twitter"
+                /></a>
+              </li>
+            </ul>
+          </address>
         </div>
-        <div class="about__block">
-          <h2 class="subtitle">Valores</h2>
-          <ul>
-            <li>- Qualidade no processo</li>
-            <li>- Foco no cliente</li>
-            <li>- Diversão</li>
-            <li>- Sustentabilidade</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="quality container spacer">
-        <h2 class="subtitle">qualidade</h2>
-        <img
-          class="quality__img"
-          src="img/bikcraft-qualidade.svg"
-          alt="Logo da Bikcraft"
-        />
-        <img
-          class="quality__img__line"
-          src="img/linhas.svg"
-          alt="Linhas decorativas"
-        />
-        <ul class="quality__list">
-          <li class="quality__item">
-            <h3 class="subtitle">durabilidade</h3>
-            <p>
-              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
-            </p>
-          </li>
-          <li class="quality__item">
-            <h3 class="subtitle">design</h3>
-            <p>
-              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
-            </p>
-          </li>
-          <li class="quality__item">
-            <h3 class="subtitle">sustentabilidade</h3>
-            <p>
-              Lorem ipsum dolor sit ammet consectur adsipesciem ad infinitum
-            </p>
-          </li>
-        </ul>
       </section>
     </main>
 
