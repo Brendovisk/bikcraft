@@ -41,49 +41,87 @@
             <span id="hamburger"></span>
           </button>
           <ul class="menu">
-            <li><a href="/Bikcraft/sobre.html" class="menu__item">Sobre</a></li>
-            <li>
-              <a href="/Bikcraft/produtos.html" class="menu__item">Produtos</a>
-            </li>
-            <li>
-              <a href="/Bikcraft/portfolio.html" class="menu__item"
-                >Portfólio</a
-              >
-            </li>
-            <li>
-              <a href="/Bikcraft/contato.html" class="menu__item">Contato</a>
-            </li>
+            <li><a href="/sobre.html" class="menu__item">Sobre</a></li>
+            <li><a href="/produtos.html" class="menu__item">Produtos</a></li>
+            <li><a href="/portfolio.html" class="menu__item">Portfólio</a></li>
+            <li><a href="/contato.html" class="menu__item">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="page-banner page-banner--sobre">
-        <h1 class="subtitle">sobre</h1>
-        <h2 class="page-banner__about">Conheça mais sobre a bikcraft</h2>
+      <section class="banner">
+        <h1 class="banner__title">bicicletas feitas a mão</h1>
+        <blockquote class="banner__quote">
+          <p class="quote">
+            “Não tenha nada em sua casa que você não considere útil ou acredita
+            ser bonito”
+          </p>
+          <cite>WILLIAM MORRIS</cite>
+        </blockquote>
+        <a class="btn" href="contato.html">orçamento</a>
       </section>
 
-      <section class="about container spacer">
-        <div class="about__block about__block--mission">
-          <h2 class="subtitle">História, Missão e Visão</h2>
-          <p>
-            Molestiae aut minima dolorem enim. Facere laborum tenetur et sequi
-            sed. Omnis delectus rerum laudantium perspiciatis rerum rem.
-          </p>
-          <p>
-            Explicabo rerum assumenda in. Ex eum voluptatum repudiandae. Et
-            rerum et facere voluptatum quos labore.
-          </p>
+      <section class="products container spacer">
+        <h2 class="subtitle">produtos</h2>
+        <div class="products__list">
+          <figure class="products__item">
+            <img
+              src="img/produtos/passeio.svg"
+              alt="Imagem de bicicleta para passeio"
+            />
+            <figcaption>
+              <h3 class="subtitle">passeio</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+          <figure class="products__item">
+            <img
+              src="img/produtos/esporte.svg"
+              alt="Imagem de bicicleta para esporte"
+            />
+            <figcaption>
+              <h3 class="subtitle">esporte</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
+          <figure class="products__item">
+            <img src="img/produtos/retro.svg" alt="Imagem de bicicleta retrô" />
+            <figcaption>
+              <h3 class="subtitle">retrô</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </figcaption>
+          </figure>
         </div>
-        <div class="about__block">
-          <h2 class="subtitle">Valores</h2>
-          <ul>
-            <li>- Qualidade no processo</li>
-            <li>- Foco no cliente</li>
-            <li>- Diversão</li>
-            <li>- Sustentabilidade</li>
-          </ul>
+        <div class="call-to-action">
+          <p>Clique aqui e veja os detalhes dos produtos</p>
+          <a class="btn btn--dark" href="contato.html">orçamento</a>
+        </div>
+      </section>
+
+      <section class="gallery spacer">
+        <h2 class="subtitle">portfólio</h2>
+        <div class="gallery__list container">
+          <img
+            class="gallery__item"
+            src="img/portfolio/retro.jpg"
+            alt="Foto de uma bicileta retrô com um cesto parada sobre um apoio"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/passeio.jpg"
+            alt="Foto de uma bicicleta de passeio parada na rua"
+          />
+          <img
+            class="gallery__item"
+            src="img/portfolio/esporte.jpg"
+            alt="Foto de uma bicicleta de esporte parada ao lado de uma casa de madeira"
+          />
+        </div>
+        <div class="call-to-action">
+          <p>Conheça mais o nosso portfólio</p>
+          <button class="btn">orçamento</button>
         </div>
       </section>
 
@@ -119,6 +157,20 @@
             </p>
           </li>
         </ul>
+        <div class="call-to-action">
+          <p>Conheça mais a história da Bikcraft</p>
+          <a class="btn btn--dark" href="sobre.html">sobre</a>
+        </div>
+      </section>
+
+      <section class="banner__footer">
+        <blockquote class="banner__quote">
+          <p class="quote">
+            “Não tenha nada em sua casa que você não considere útil ou acredita
+            ser bonito”
+          </p>
+          <cite>WILLIAM MORRIS</cite>
+        </blockquote>
       </section>
     </main>
 
