@@ -10,3 +10,5 @@ Eu resolvi fazer o curso de Web Design Completo da Origamid, e me deparei com um
 ---
 - Link do projeto no Figma:
 https://www.figma.com/file/5Gdzn58RTXK04faETdZI0d/Bikcraft?node-id=0%3A1
+- Link do site: 
+https://brendovisk.github.io/Bikcraft/
